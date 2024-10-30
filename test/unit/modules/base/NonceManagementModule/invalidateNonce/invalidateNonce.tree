@@ -1,0 +1,5 @@
+invalidateNonce.t.sol
+└── when invalidating a nonce
+├── it should mark the nonce as used
+├── it should work for any nonce value (fuzz test)
+└── it should be idempotent

@@ -1,0 +1,15 @@
+CommonLib_permit.t.sol
+├── when the permit length is 96 (Permit2 SignatureTransfer)
+│   └── it should call the Permit2 permitTransferFrom function
+│       ├── it should transfer tokens correctly
+│       └── it should revert if the signature is invalid
+├── when the permit length is 192 (Permit2 AllowanceTransfer)
+│   └── it should call the Permit2 allowance setting function
+│       ├── it should set allowance correctly
+│       └── it should revert if the signature is invalid
+├── when the permit length is 416 (EIP2612 USDC + Permit2 Allowance)
+│   └── it should call both EIP2612 USDC permit and Permit2 allowance functions
+│       └── it should set Permit2 allowance correctly
+└──  when the permit length is 448 (DAI-Style + Permit2 Allowance)
+    └── it should call both DAI-style permit and Permit2 allowance functions
+        └── it should set Permit2 allowance correctly

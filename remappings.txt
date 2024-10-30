@@ -1,0 +1,15 @@
+@forge-std/=lib/forge-std/src
+@interfaces=src/interfaces/
+@types=src/types/
+@libraries=src/libraries/
+@solady=lib/solady/src/
+@prb-test=lib/prb-test/src/
+@openzeppelin=lib/openzeppelin-contracts/contracts/
+@admin=src/admin/
+@executors=src/executors/
+@mocks=test/mocks/
+@factory=src/factory/
+@registry=src/registry/
+@modules=src/modules/
+@adapter=src/adapter/
+@test=test/

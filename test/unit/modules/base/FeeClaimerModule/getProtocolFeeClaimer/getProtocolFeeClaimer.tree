@@ -1,0 +1,5 @@
+getProtocolFeeClaimer.t.sol
+└── when getting the protocol fee claimer
+    ├── it should return the initial fee claimer (zero address)
+    ├── it should return the updated fee claimer after an update
+    └── it should return the correct fee claimer after multiple updates

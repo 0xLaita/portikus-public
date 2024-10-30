@@ -1,0 +1,3 @@
+name.t.sol
+└── when checking the module name
+    └── it should return the correct name

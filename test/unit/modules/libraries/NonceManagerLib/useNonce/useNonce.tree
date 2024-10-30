@@ -1,0 +1,4 @@
+useNonce.t.sol
+└── when using a nonce
+    ├── it should successfully mark the nonce as used
+    └── it should revert when the nonce is already used

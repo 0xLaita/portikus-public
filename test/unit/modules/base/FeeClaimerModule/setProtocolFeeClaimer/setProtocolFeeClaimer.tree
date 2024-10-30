@@ -1,0 +1,5 @@
+setProtocolFeeClaimer.t.sol
+└── when setting the protocol fee claimer
+    ├── it should successfully update the protocol fee claimer
+    ├── it should revert when an unauthorized account tries to update the fee claimer
+    └── it should allow setting the fee claimer to the zero address

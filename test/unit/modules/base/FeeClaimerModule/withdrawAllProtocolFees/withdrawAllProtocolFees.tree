@@ -1,0 +1,10 @@
+withdrawAllProtocolFees.t.sol
+└── when withdrawing all protocol fees
+    ├── for ERC20 tokens
+    │   ├── it should successfully withdraw all collected fees
+    │   └── it should return zero when no fees are collected
+    ├── for ETH
+    │   ├── it should successfully withdraw all collected fees
+    │   └── it should return zero when no fees are collected
+    └── when called by an unauthorized account
+        └── it should revert with UnauthorizedAccount error

@@ -1,0 +1,12 @@
+swapSettleFillable.t.sol
+└── when settling a fillable swap order
+    ├── with ERC20 tokens
+    │   ├── it should successfully settle a full order
+    │   └── it should successfully settle a partial order
+    ├── with ETH as destination token
+    │   └── it should successfully settle a full order
+    ├── it should revert when the deadline has expired
+    ├── it should revert when called by an unauthorized agent
+    ├── it should revert when trying to fill an already fully filled order
+    ├── it should revert when the return amount is insufficient
+    └── it should revert when the execution fails

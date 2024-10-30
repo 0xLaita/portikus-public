@@ -1,0 +1,3 @@
+hashTypedDataV4.t.sol
+└── when hashing typed data
+    └── it should return the correct hash

@@ -1,0 +1,9 @@
+transferTo.t.sol
+├── when transferring an ERC20 token
+│   ├── it should transfer the dest amount to the recipient
+│   └── when the transfer fails
+│       └── it should revert
+└──  hen transferring the exact amount of ETH
+    ├── it should transfer the native token amount to the recipient
+    └── when the caller has insufficient ETH balance
+        └── it should revert

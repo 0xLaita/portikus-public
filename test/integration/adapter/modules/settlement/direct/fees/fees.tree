@@ -1,0 +1,32 @@
+fees.t.sol
+├── when settling an order with fees
+│   ├── it should successfully settle the order and collect fees
+│   ├── it should emit the correct OrderSettled event with fee details
+│   └── it should update the collected fees for the partner
+├── when settling an order with surplus
+│   ├── it should calculate surplus correctly based on expectedDestAmount
+│   ├── it should distribute fees correctly when there's a surplus
+│   └── it should emit the correct OrderSettled event with surplus details
+├── when settling an order without surplus
+│   ├── it should calculate fees correctly when there's no surplus
+│   └── it should emit the correct OrderSettled event without surplus
+├── when settling a batch of orders with mixed surplus situations
+│   ├── it should calculate fees correctly for each order
+│   ├── it should distribute surplus correctly where applicable
+│   └── it should update the total collected fees correctly
+├── when withdrawing fees
+│   ├── it should allow partners to withdraw specific amounts
+│   ├── it should allow partners to withdraw all fees for a token
+│   ├── it should allow partners to batch withdraw all fees for multiple tokens
+│   ├── it should emit the correct FeesWithdrawn event
+│   └── it should update the collected fees balance correctly
+├── when settling orders with different fee percentages
+│   ├── it should calculate and collect fees correctly for each percentage
+│   └── it should handle zero fees correctly
+├── when settling orders with different tokens
+│   └── it should collect and withdraw fees in the correct tokens
+├── when attempting to withdraw more fees than collected
+│   └── it should revert
+└── when querying collected fees
+    ├── it should return the correct amount for a single token
+    └── it should return the correct amounts for multiple tokens

@@ -1,0 +1,9 @@
+verify.t.sol
+├── when the actualSigner is address(0)
+│   └── it should revert
+├── when signature was not signed by the signer
+│   └── it should revert
+├── when the signature was signed by the signer
+│   └── it should return true
+└── when the signature is from an ERC1271 contract
+    └── it should return true

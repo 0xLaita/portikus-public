@@ -1,0 +1,11 @@
+swapSettleBatch.t.sol
+├── when settling multiple orders
+│   └── it should successfully settle all orders
+├── when settling orders with ETH as destination
+│   └── it should successfully settle all orders and transfer ETH
+├── when an order has an expired deadline
+│   └── it should revert with DeadlineExpired
+├── when an order has insufficient return amount
+│   └── it should revert with InsufficientReturnAmount
+└── when called by an unauthorized agent
+    └── it should revert

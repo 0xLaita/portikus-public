@@ -1,0 +1,5 @@
+directFilledAmount.t.sol
+└── when checking the filled amount of an order
+    ├── it should return zero for an unfilled order
+    ├── it should return the correct amount for a partially filled order
+    └── it should return the full amount for a fully filled order

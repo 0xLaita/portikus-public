@@ -1,0 +1,9 @@
+uninstall.t.sol
+└── when uninstalling a module
+    ├── by the owner
+    │   ├── when the module is installed
+    │   │   └── it should successfully uninstall the module
+    │   └── when the module is not installed
+    │       └── it should revert when the module is not installed
+    └── by a non-owner
+        └── it should revert when a non-owner tries to uninstall a module

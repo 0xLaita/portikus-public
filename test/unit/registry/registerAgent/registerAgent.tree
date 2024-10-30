@@ -1,0 +1,5 @@
+registerAgent.t.sol
+└── when registering new agents
+    ├── it should successfully register new agents
+    ├── it should not register an already registered agent
+    └── it should revert when called by a non-owner

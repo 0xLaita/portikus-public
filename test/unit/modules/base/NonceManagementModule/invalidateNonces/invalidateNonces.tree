@@ -1,0 +1,4 @@
+invalidateNonces.t.sol
+└── when invalidating multiple nonces
+├── it should mark all provided nonces as used
+└── it should handle an empty array of nonces

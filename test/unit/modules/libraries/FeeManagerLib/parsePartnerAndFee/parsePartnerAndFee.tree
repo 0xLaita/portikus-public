@@ -1,0 +1,22 @@
+parsePartnerAndFee.t.sol
+└── when parsing partner and fee
+    ├── with valid input
+    │   ├── it should correctly extract the partner address
+    │   ├── it should correctly extract the fee
+    │   └── it should correctly extract the partner takes surplus flag
+    ├── with zero address as partner
+    │   ├── it should correctly extract the zero address
+    │   ├── it should correctly extract the fee
+    │   └── it should correctly extract the partner takes surplus flag
+    ├── with maximum allowed fee
+    │   ├── it should correctly extract the partner address
+    │   ├── it should correctly extract the maximum fee
+    │   └── it should correctly extract the partner takes surplus flag
+    ├── with fee larger than maximum
+    │   ├── it should correctly extract the partner address
+    │   ├── it should cap the fee at the maximum allowed value
+    │   └── it should correctly extract the partner takes surplus flag
+    └── with partner takes surplus flag set
+        ├── it should correctly extract the partner address
+        ├── it should correctly extract the fee
+        └── it should correctly extract the partner takes surplus flag as true

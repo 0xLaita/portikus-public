@@ -1,0 +1,5 @@
+fallback.t.sol
+└── when invoking fallback function
+    ├── it should successfully delegate the call to the registered module and return the data
+    ├── it should revert with ModuleNotFound if the module is not found
+    └── it should revert with the module's revert data if the delegate call fails

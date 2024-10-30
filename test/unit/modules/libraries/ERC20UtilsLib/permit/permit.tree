@@ -1,0 +1,9 @@
+CommonLib_permit.t.sol
+├── when the permit length is 0
+│  └── it should do nothing
+├── when the permit length is 224 (EIP2612)
+│  └── it should call the EIP2612 permit function
+├── when the permit length is 256 (DAI-Style)
+│  └── it should call the DAI-Style permit function
+└── when the permit length is invalid
+    └── it should revert

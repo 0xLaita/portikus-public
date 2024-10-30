@@ -1,0 +1,14 @@
+getModules.t.sol
+└── when calling getModules
+├── when no modules are installed
+│   └── it should return an empty array
+├── when one module is installed
+│   └── it should return an array with one module
+│       ├── the module address should be correct
+│       ├── the number of selectors should be correct
+│       └── the selectors should include all module functions
+└── when multiple modules are installed
+└── it should return an array with all installed modules
+    ├── the number of returned modules should be correct
+    ├── the module addresses should be correct
+    └── each module should have the correct number and content of selectors

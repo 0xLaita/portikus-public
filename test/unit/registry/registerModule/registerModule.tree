@@ -1,0 +1,5 @@
+registerModule.t.sol
+└── when registering new modules
+    ├── it should successfully register new modules
+    ├── it should not register an already registered module
+    └── it should revert when called by a non-owner

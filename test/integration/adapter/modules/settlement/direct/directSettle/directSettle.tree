@@ -1,0 +1,16 @@
+directSettle.t.sol
+├── when settling a single order
+│   └── it should successfully settle the order
+├── when settling an order with ETH as destination
+│   ├── it should successfully settle the order and transfer ETH
+│   └── it should revert when the msg.value is less than the destAmount
+├── when the order has an expired deadline
+│   └── it should revert with DeadlineExpired
+├── when the settled amount is less than the order's destAmount
+│   └── it should revert with InsufficientReturnAmount
+├── when called by an unauthorized agent
+│   └── it should revert
+├── when the srcToken transfer fails
+│   └── it should revert
+└── when the destToken transfer fails
+    └── it should revert

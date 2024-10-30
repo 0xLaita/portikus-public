@@ -1,0 +1,13 @@
+directSettleFillable.t.sol
+└── when settling a fillable order directly
+    ├── with ERC20 tokens
+    │   ├── it should successfully settle a full order
+    │   ├── it should successfully settle a partial order
+    │   └── it should successfully settle the remaining amount of a partially filled order
+    ├── with ETH as destination token
+    │   ├── it should successfully settle a full order
+    │   ├── it should successfully settle a partial order
+    │   └── it should revert when msg.value is less than amountOut
+    ├── it should revert when the deadline has expired
+    ├── it should revert when called by an unauthorized agent
+    └── it should revert when trying to fill an already fully filled order

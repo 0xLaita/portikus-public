@@ -1,0 +1,5 @@
+getFilledAmount.t.sol
+└── when getting the filled amount
+    ├── it should return zero for an unfilled order
+    ├── it should return the correct filled amount for a filled order
+    └── it should return the correct filled amount for fuzzed inputs

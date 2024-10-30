@@ -1,0 +1,5 @@
+DOMAIN_SEPARATOR.t.sol
+├── when the domain separator is calculated
+│   └── it should return the correct domain separator
+└── when the chain ID changes
+    └── it should rebuild the domain separator

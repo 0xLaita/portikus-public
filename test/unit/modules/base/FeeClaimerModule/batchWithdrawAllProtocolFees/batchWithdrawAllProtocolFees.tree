@@ -1,0 +1,10 @@
+batchWithdrawAllProtocolFees.t.sol
+└── when batch withdrawing all protocol fees
+    ├── with multiple tokens including ERC20 and ETH
+    │   └── it should successfully withdraw all collected fees for each token
+    ├── with an empty array of tokens
+    │   └── it should execute without reverting or transferring any fees
+    ├── with mixed token types (ERC20 and ETH)
+    │   └── it should correctly handle both ERC20 and ETH withdrawals
+    └── when called by an unauthorized account
+        └── it should revert with UnauthorizedAccount error

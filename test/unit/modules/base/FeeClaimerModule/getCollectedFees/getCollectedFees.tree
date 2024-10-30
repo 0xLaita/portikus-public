@@ -1,0 +1,8 @@
+getCollectedFees.t.sol
+└── when getting collected fees
+    ├── for ERC20 tokens
+    │   └── it should return the correct amount of collected fees
+    ├── for ETH
+    │   └── it should return the correct amount of collected fees
+    └── when no fees are collected
+        └── it should return zero

@@ -1,0 +1,4 @@
+areNoncesUsed.t.sol
+└── when checking if multiple nonces are used
+├── it should return correct status for each nonce
+└── it should handle an empty array of nonces

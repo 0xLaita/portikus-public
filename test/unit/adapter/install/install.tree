@@ -1,0 +1,11 @@
+install.t.sol
+└── when installing a module
+    ├── by the owner
+    │   ├── when the module is registered and not already installed
+    │   │   └── it should successfully install the module
+    │   ├── when the module is registered and already installed
+    │   │   └── it should revert when the module is already installed
+    │   └── when the module is not registered
+    │       └── it should revert when the module is not registered
+    └── by a non-owner
+        └── it should revert when a non-owner tries to install a module

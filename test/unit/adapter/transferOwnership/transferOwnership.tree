@@ -1,0 +1,6 @@
+transferOwnership.t.sol
+└── when transferring ownership
+    ├── as the current owner
+    │   └── it should successfully change the owner
+    └── as a non-owner
+        └── it should revert when called by a non-owner

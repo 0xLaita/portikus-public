@@ -1,0 +1,14 @@
+directSettleFillableBatch.t.sol
+└── when settling multiple fillable orders directly in a batch
+    ├── with ERC20 tokens
+    │   ├── it should successfully settle all orders in full
+    │   └── it should successfully settle orders with different fill percentages
+    ├── with ETH as destination token
+    │   ├── it should successfully settle all orders with ETH as destination
+    │   └── it should revert when msg.value is insufficient for ETH destination
+    ├── with mixed ERC20 and ETH orders
+    │   ├── it should successfully settle all orders in full
+    │   ├── it should successfully settle orders with different fill percentages
+    │   └── it should revert when insufficient ETH is sent
+    ├── it should revert when one order in the batch has an expired deadline
+    └── it should revert when called by an unauthorized agent

@@ -1,0 +1,10 @@
+create.t.sol
+└── when deploying a new adapter contract
+    ├── when the owner is a non-zero address
+    │   ├── it should return the correct adapter address
+    │   ├── it should emit the AdapterCreated event
+    │   ├── it should deploy the adapter at the correct deterministic address
+    │   ├── it should revert with AdapterCreationFailed when deployment fails due to an existing contract
+    │   └── it should revert when not enough gas is provided
+    └── when the owner is the zero address
+        └── it should revert with InvalidOwner

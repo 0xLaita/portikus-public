@@ -1,0 +1,3 @@
+selectors.t.sol
+└── when checking module selectors
+    └── it should return the correct selectors for all module functions

@@ -1,0 +1,44 @@
+feesFillable.t.sol
+├── when settling an order with fees using swapSettleFillable
+│   ├── it should successfully settle the order and collect fees
+│   ├── it should emit the correct OrderSettled event with fee details
+│   ├── it should update the collected fees for the partner
+│   └── it should transfer the correct executor fee
+├── when settling an order with surplus (actual amount > expectedDestAmount)
+│   ├── it should calculate surplus correctly based on expectedDestAmount
+│   ├── it should distribute protocol fees from the surplus
+│   ├── it should calculate partner fees on the remaining amount
+│   └── it should emit the correct OrderSettled event with surplus details
+├── when settling an order without surplus (actual amount <= expectedDestAmount)
+│   ├── it should not charge any protocol fees
+│   ├── it should calculate partner fees on the actual amount
+│   └── it should emit the correct OrderSettled event without surplus
+├── when settling multiple orders with fees using swapSettleFillableBatch
+│   ├── it should successfully settle all orders and collect fees
+│   ├── it should handle surplus and non-surplus cases correctly
+│   ├── it should emit the correct OrderSettled events with fee details
+│   ├── it should update the collected fees for the partner for each order
+│   └── it should transfer the correct executor fees for each order
+├── when withdrawing fees
+│   ├── it should allow partners to withdraw specific amounts
+│   ├── it should allow partners to withdraw all fees for a token
+│   ├── it should allow partners to batch withdraw all fees for multiple tokens
+│   ├── it should emit the correct FeesWithdrawn event
+│   └── it should update the collected fees balance correctly
+├── when settling orders with different fee percentages and expected amounts
+│   ├── it should calculate and collect partner fees correctly for each percentage
+│   ├── it should calculate and transfer executor fees correctly for each percentage
+│   ├── it should handle zero fees correctly
+│   └── it should handle different surplus scenarios correctly
+├── when settling orders with different tokens and expected amounts
+│   ├── it should collect and withdraw partner fees in the correct tokens
+│   └── it should transfer executor fees in the correct tokens
+├── when attempting to withdraw more fees than collected
+│   └── it should revert
+├── when querying collected fees
+│   ├── it should return the correct amount for a single token
+│   └── it should return the correct amounts for multiple tokens
+└── when partially filling an order with fees
+    ├── it should calculate and collect partner fees correctly based on the filled amount
+    ├── it should calculate and transfer executor fees correctly based on the filled amount
+    └── it should handle surplus cases correctly for partial fills

@@ -1,0 +1,3 @@
+getAgents.t.sol
+└── when retrieving the list of registered agents
+    └── it should return the correct list of registered agents

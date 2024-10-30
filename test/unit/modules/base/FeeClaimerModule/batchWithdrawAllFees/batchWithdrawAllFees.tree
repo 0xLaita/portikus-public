@@ -1,0 +1,4 @@
+batchWithdrawAllFees.t.sol
+└── when batch withdrawing all fees
+    ├── it should successfully withdraw all collected fees for multiple tokens and ETH
+    └── it should handle an empty array of tokens

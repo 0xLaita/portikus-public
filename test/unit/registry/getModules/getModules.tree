@@ -1,0 +1,3 @@
+getModules.t.sol
+└── when retrieving the list of registered modules
+    └── it should return the correct list of registered modules

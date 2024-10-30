@@ -1,0 +1,5 @@
+getBalance.t.sol
+├── when the token is ETH
+│  └── it should return the correct balance
+└── when the token is ERC20
+    └── it should return the correct balance

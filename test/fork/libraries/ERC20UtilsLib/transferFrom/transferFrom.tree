@@ -1,0 +1,11 @@
+TransferFromTest.t.sol
+├── when permit length is 192
+│   └── it should use Permit2 transferFrom
+├── when permit length is 1
+│   └── it should use Permit2 transferFrom
+├── when permit length is greater than 415
+│   └── it should use Permit2 transferFrom
+├── when permit length is 0 (or any other value not covered above)
+│   └── it should fall back to ERC20 transferFrom
+└── when permit length is 96
+    └── it should not perform any transfer

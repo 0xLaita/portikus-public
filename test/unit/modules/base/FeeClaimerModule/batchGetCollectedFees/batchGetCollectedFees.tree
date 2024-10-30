@@ -1,0 +1,4 @@
+batchGetCollectedFees.t.sol
+└── when batch getting collected fees
+    ├── it should return correct amounts for multiple tokens and ETH
+    └── it should handle an empty array of tokens

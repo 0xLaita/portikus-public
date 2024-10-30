@@ -1,0 +1,40 @@
+processFees.t.sol
+└── when processing fees
+    ├── with no surplus
+    │   ├── with partner (fixed fee)
+    │   │   ├── it should calculate return amount correctly
+    │   │   ├── it should calculate partner fee correctly
+    │   │   ├── it should set protocol fee to zero
+    │   │   └── it should update collected fees for the partner
+    │   └── with no partner
+    │       ├── it should set return amount equal to received amount
+    │       ├── it should set partner fee to zero
+    │       └── it should set protocol fee to zero
+    ├── with surplus
+    │   ├── with partner (fixed fee)
+    │   │   ├── it should calculate return amount correctly
+    │   │   ├── it should calculate partner fee correctly
+    │   │   ├── it should calculate protocol fee correctly
+    │   │   ├── it should update collected fees for the partner
+    │   │   └── it should update collected fees for the protocol
+    │   ├── with partner (takes surplus)
+    │   │   ├── it should set return amount equal to expected amount
+    │   │   ├── it should calculate partner fee as 50% of surplus
+    │   │   ├── it should calculate protocol fee as 50% of surplus
+    │   │   ├── it should update collected fees for the partner
+    │   │   └── it should update collected fees for the protocol
+    │   └── with no partner
+    │       ├── it should calculate return amount correctly
+    │       ├── it should set partner fee to zero
+    │       ├── it should calculate protocol fee correctly
+    │       └── it should update collected fees for the protocol
+    ├── with exact amount (received = expected)
+    │   ├── it should calculate return amount correctly
+    │   ├── it should calculate partner fee correctly
+    │   └── it should set protocol fee to zero
+    └── with surplus and partner (fixed fee overrides surplus)
+        ├── it should calculate return amount correctly
+        ├── it should calculate partner fee based on fixed fee, ignoring surplus
+        ├── it should calculate protocol fee correctly
+        ├── it should update collected fees for the partner
+        └── it should update collected fees for the protocol

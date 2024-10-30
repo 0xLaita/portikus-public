@@ -1,0 +1,5 @@
+unregisterModule.t.sol
+└── when unregistering a module
+    ├── it should successfully unregister a module
+    ├── it should do nothing for a non-existent module
+    └── it should revert when called by a non-owner

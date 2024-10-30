@@ -1,0 +1,8 @@
+withdrawFees.t.sol
+└── when withdrawing fees
+    ├── for ERC20 tokens
+    │   ├── it should successfully withdraw fees when sufficient balance exists
+    │   └── it should revert when attempting to withdraw more than collected fees
+    └── for ETH
+        ├── it should successfully withdraw fees when sufficient balance exists
+        └── it should revert when attempting to withdraw more than collected fees

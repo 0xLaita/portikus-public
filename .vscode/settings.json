@@ -1,0 +1,13 @@
+{
+  "[solidity]": {
+    "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "npm.exclude": "**/lib/**",
+  "slither.solcPath": "",
+  "slither.hiddenDetectors": [],
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on"
+}

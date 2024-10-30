@@ -1,0 +1,4 @@
+invalidateNonce.t.sol
+└── when invalidating a nonce
+    ├── it should successfully mark the nonce as used
+    └── it should remain idempotent on multiple calls

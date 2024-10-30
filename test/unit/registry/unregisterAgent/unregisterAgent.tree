@@ -1,0 +1,5 @@
+unregisterAgent.t.sol
+└── when unregistering an agent
+    ├── it should successfully unregister an agent
+    ├── it should do nothing for a non-existent agent
+    └── it should revert when called by a non-owner

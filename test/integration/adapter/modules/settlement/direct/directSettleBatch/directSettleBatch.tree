@@ -1,0 +1,14 @@
+directSettleBatch.t.sol
+├── when settling multiple orders in a batch
+│   ├── it should successfully settle all orders with ERC20 tokens
+│   └── it should successfully settle a mix of ERC20 and ETH orders
+├── when one order in the batch has an expired deadline
+│   └── it should revert with DeadlineExpired
+├── when one order in the batch has insufficient return amount
+│   └── it should revert with InsufficientReturnAmount
+├── when called by an unauthorized agent
+│   └── it should revert
+├── when one source token transfer fails
+│   └── it should revert
+└── when one destination token transfer fails
+    └── it should revert

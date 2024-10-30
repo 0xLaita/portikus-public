@@ -1,0 +1,17 @@
+swapSettle.t.sol
+├── when settling a single order
+│   └── it should successfully settle the order
+├── when settling an order with ETH as destination
+│   └── it should successfully settle the order and transfer ETH
+├── when the order has an expired deadline
+│   └── it should revert with DeadlineExpired
+├── when the order has insufficient return amount
+│   └── it should revert with InsufficientReturnAmount
+├── when called by an unauthorized agent
+│   └── it should revert
+├── when the before step fails
+│   └── it should revert with ExecutionFailed
+├── when the main step fails
+│   └── it should revert
+└── when the after step fails
+    └── it should revert with ExecutionFailed

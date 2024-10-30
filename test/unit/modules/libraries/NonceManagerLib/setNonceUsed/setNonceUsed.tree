@@ -1,0 +1,3 @@
+setNonceUsed.t.sol
+└── when setting a nonce as used
+    └── it should mark the nonce as used

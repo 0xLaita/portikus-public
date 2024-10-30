@@ -1,0 +1,9 @@
+swapSettleFillableBatch.t.sol
+└── when settling multiple fillable swap orders in a batch
+    ├── with ERC20 tokens
+    │   └── it should successfully settle multiple full orders
+    ├── with ETH as destination token
+    │   └── it should successfully settle multiple full orders
+    ├── it should revert when any order's deadline has expired
+    ├── it should revert when any order has insufficient return amount
+    └── it should revert when called by an unauthorized agent
